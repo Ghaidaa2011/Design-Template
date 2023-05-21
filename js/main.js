@@ -81,7 +81,7 @@ length=0;
 function randomizeImgs(){
     if (backgroundOption === true) {
         backgroundInterval = setInterval( ()=> {
-            landingPage.style.backgroundImage = `url(../imgs/${imgsArray[length]})`;
+            landingPage.style.backgroundImage = `url(imgs/${imgsArray[length]})`;
             length++;
             if (length >= imgsArray.length){
                 length = 0;
