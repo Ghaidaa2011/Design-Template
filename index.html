@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <script src="https://kit.fontawesome.com/689b28e400.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js" integrity="sha512-9UsrKTYzS9smDm2E58MLs0ACtOki+UC4bBq4iK5wi7lJycwqcaiHxr1bdEsIVoK0l5STEzLUdYyDdFQ5OEjczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Your Car</title>
+</head>
+<body>
+    <!-- start scroll to top -->
+    <span class="up">
+        <i class="fa-solid fa-chevron-up scroll-up"></i>
+    </span>
+    <!-- end scroll to top -->
+    <!-- start setting box -->
+    <div class="setting-box">
+        <div class="toggle-settings">
+            <i class="fa-solid fa-gear gear-icon "></i>
+        </div>
+        <div class="settings-content">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li data-color="#000000"></li>
+                    <li data-color="white"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4>Random Backgrounds</h4>
+                <div class="random-backgrounds">
+                    <span class="yes active" data-background="yes" >Yes</span>
+                    <span class="no" data-background="no" >No</span>
+                </div>
+            </div>
+            <div class="option-box">
+                <h4>Show bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active" data-display="show" >Yes</span>
+                    <span class="no" data-display="hide" >No</span>
+                </div>
+            </div>
+            <button class="reset-options">Reset</button>
+        </div>
+    </div>
+    <!-- end setting box -->
+    <!-- start nav bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section="#about-us">
+            <div class="tooltip">About us</div>
+        </div>
+        <div class="bullet" data-section="#our-model">
+            <div class="tooltip">Our model</div>
+        </div>
+        <div class="bullet" data-section="#gallery">
+            <div class="tooltip">Gallery</div>
+        </div>
+        <div class="bullet" data-section="#title">
+            <div class="tooltip">Follow us</div>
+        </div>
+        <div class="bullet" data-section="#contact">
+            <div class="tooltip">contact us</div>
+        </div>
+    </div>
+    <!-- end nav bullets -->
+
+    <!-- start landing page -->
+    <div class="landing-page">
+        <div class="container">
+        <div class="header-area navbar">
+            <div class="logo">Mercedes</div>
+            <div class="links-container">
+                <div class="links">
+                    <ul>
+                        <!-- <li><a href="https://www.mercedes-benz.com.eg/en/passengercars.html?subgroup=all.offroader&group=all&view=BODYTYPE" target="_blank">Home</a></li> -->
+                        <li><a href="" data-section="#about-us">About</a></li>
+                        <li><a href="" data-section="#our-model">SUV</a></li>
+                        <li><a href="" data-section="#gallery">Gallery</a></li>
+                        <li><a href="" data-section="#title">Follow us</a></li>
+                    </ul>
+                </div>
+                <button class="toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="text">
+            <h1>Mercedes-Benz</h1>
+        </div>
+        </div>
+    </div>
+    <!-- end landing page -->
+
+    <!-- start about us  -->
+    <div id="about-us" class="about-us">
+        <div class="info-box">
+            <h2>About Us</h2>
+            <p>Mercedes-Benz, commonly referred to as Mercedes and sometimes as Benz, is a German luxury and commercial vehicle automotive brand</p>
+        </div>
+        <div class="image-box">
+            <img src="imgs/green-g-class.jpg" alt="">
+        </div>
+    </div>   
+    <!-- end about us -->
+    <!-- start our models -->
+    <div id="our-model" class="models">
+        <div class="container">
+            <h2>SUV model</h2>
+            <div class="model-box">
+                <div class="model-name">GLA</div>
+                <div class="model-progress">
+                    <span data-progress="85%"></span>
+                </div>
+            </div>
+            <div class="model-box">
+                <div class="model-name">GLC-coupe</div>
+                <div class="model-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+            <div class="model-box">
+                <div class="model-name">GLE</div>
+                <div class="model-progress">
+                    <span data-progress="75%"></span>
+                </div>
+            </div>
+            <div class="model-box">
+                <div class="model-name">GLs</div>
+                <div class="model-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our models -->
+    <!-- start image slider -->
+        <div  id="gallery" class="image-slider">
+            <div class="container">
+                <h2>Our Gallery</h2>
+                    <div class="slider">
+                        <div id="slide-number" class="slide-number"></div>
+                        <img decoding="async" src="imgs/iris.webp" alt="" />
+                        <img decoding="async" src="imgs/iris (1).webp" alt="" />
+                        <img decoding="async" src="imgs/iris (2).webp" alt="" />
+                        <img decoding="async" src="imgs/iris (3).webp" alt="" />
+                    </div>
+                    <div class="slider-controls">
+                        <span id="prev" class="prev">&larr;</span>
+                        <span id="indicators" class="indicators"></span>
+                        <span id="next" class="next">&rarr;</span>
+                    </div>
+            </div>
+        </div>
+    <!-- end image slider -->
+    <!-- start gallery -->
+    <div class="gallery">
+        <div class="container">
+            <div class="images-box">
+                <img src="imgs/img1.webp" alt="Model 1">
+                <img src="imgs/img2.webp" alt="Model 2">
+                <img src="imgs/img1.webp" alt="Model 3">
+                <img src="imgs/img2.webp" alt="Model 4">
+                <img src="imgs/img1.webp" alt="Model 5">
+                <img src="imgs/img2.webp" alt="">
+                <img src="imgs/img1.webp" alt="">
+                <img src="imgs/img2.webp" alt="">
+                <img src="imgs/img1.webp" alt="">
+                <img src="imgs/img2.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end gallery -->
+    <!-- start timeline -->
+    <div class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2023</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Our services</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quaerat repellendus repudiandae! Dicta, amet modi ex harum unde totam incidunt ad, nobis ducimus ullam fugiat repudiandae esse consequuntur nostrum quibusdam.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Our vehicles</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quaerat repellendus repudiandae! Dicta, amet modi ex harum unde totam incidunt ad, nobis ducimus ullam fugiat repudiandae esse consequuntur nostrum quibusdam.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year">2022</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>luxury brand</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quaerat repellendus repudiandae! Dicta, amet modi ex harum unde totam incidunt ad, nobis ducimus ullam fugiat repudiandae esse consequuntur nostrum quibusdam.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Branded cars</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quaerat repellendus repudiandae! Dicta, amet modi ex harum unde totam incidunt ad, nobis ducimus ullam fugiat repudiandae esse consequuntur nostrum quibusdam.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end timeline -->
+    <!-- start title section -->
+    <div class="title" id="title">
+        <div class="container">
+            <h2>Follow Mercedes-Benz</h2>
+                <div class="icons">
+                    <span>
+                        <i class="fa-brands fa-instagram">
+                            <a href=""></a>
+                        </i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-facebook">
+                            <a href=""></a>
+                        </i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-twitter">
+                            <a href=""></a>
+                        </i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-linkedin">
+                            <a href=""></a>
+                        </i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-youtube">
+                            <a href=""></a>
+                        </i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-tiktok">
+                            <a href=""></a>
+                        </i>
+                    </span>
+                </div>
+        </div>
+    </div>
+    <!-- end title section -->
+    <!-- start contact us section  -->
+    <div class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your name" name="username" >
+                    <input type="text" placeholder="Your phone" name="phone" >
+                    <input type="email" placeholder="Your email" name="email" >
+                    <input type="text" placeholder="Subject" name="Subject" >
+                </div>
+                <div class="right">
+                    <textarea name="maesage" placeholder="Your massage"></textarea>
+                    <input type="submit" value="Send" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end contact us section  -->
+    <!-- start footer  -->
+    <div class="footer">Created with &#10084; </div>
+    <!-- end footer -->
+    <script src="js/main.js"></script>
+</body>
+</html>
