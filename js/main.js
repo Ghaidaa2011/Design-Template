@@ -76,7 +76,7 @@ randomBackEl.forEach(span => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Start changing the background image
 let landingPage = document.querySelector(".landing-page");
-let imgsArray = ["img1.webp","img2.webp","img3.jpg"];
+let imgsArray = ["image1.jpg","image2.jpg","img3.jpg"];
 length=0;
 function randomizeImgs(){
     if (backgroundOption === true) {
