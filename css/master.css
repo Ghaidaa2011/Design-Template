@@ -367,8 +367,8 @@ position: relative;
   .about-us {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
     display: flex;
     background-color: var(--main-color);
   }
@@ -380,8 +380,13 @@ position: relative;
   }
   .about-us .info-box {
     flex: 1;
+    padding: 100px;
+  }
+  @media (max-width:991px){
+  .about-us .info-box {
     padding: 30px;
   }
+}
   .about-us .info-box h2 {
     font-weight: bold;
     font-size: 30px;
@@ -935,7 +940,7 @@ position: relative;
   /* end contact */
   /* Start Footer */
 .footer {
-  background-color: #666;
+  background-color: #444;
   color: #222;
   padding: 20px;
   text-align: center;
