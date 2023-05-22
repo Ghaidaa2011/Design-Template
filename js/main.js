@@ -122,13 +122,13 @@ randomizeImgs();
         // let titlewindowScrolltop = this.pageYOffset;
         if (windowScrollTop > (titleOffsetTop + titleOuterHeight - windowHeight)) {
             document.querySelectorAll(".title .icons span i").forEach(i =>{
-                i.style.color = "black";
+                i.style.color = "#666";
             });
             document.querySelector(".title h2").style.height = "57.5px";
         } 
         else {
             document.querySelectorAll(".title .icons span i").forEach(i =>{
-                i.style.color = "white";
+                i.style.color = "var(--main-color)";
             });
             document.querySelector(".title h2").style.height = "0px";
         }
