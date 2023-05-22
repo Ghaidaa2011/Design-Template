@@ -1,6 +1,6 @@
 :root{
-  --main-color:#fff;
-  --second-color:#000000;
+  --main-color: 255, 255, 255;
+  --second-color: 0, 0, 0;
   --third-color:#666;
 }
 * {
@@ -171,7 +171,7 @@
 
   .landing-page {
     min-height: 100vh;
-    background-image: url("imgs/image2.jpg"); 
+    background-image: url("imgs/img3.jpg");
     background-size : cover;
     position: relative;
   }
@@ -205,11 +205,11 @@
   }
   /**********************************************************************/
   .header-area .logo {
-    flex-basis: 1;
+    /* flex-basis: 1; */
     padding: 15px;
     font-weight: bold;
     cursor: default;
-    
+    width: 250px;
   }
   .header-area .links-container {
     width: 100%;
@@ -259,7 +259,7 @@ position: relative;
   content: "";
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #333 transparent; 
+  border-color: transparent transparent #000000 transparent; 
   position:absolute;  
   left: 10px;
   bottom: -35px;
@@ -313,7 +313,7 @@ position: relative;
       position: absolute;
       top: 70%;
     } */
-    .landing-page .text{
+    /* .landing-page .text{
     position: absolute;
     color: var(--main-color);
     width: fit-content;
@@ -322,13 +322,14 @@ position: relative;
     left: 40px;
     text-align: left;
     transform: translate(0%,150%);
+
     }
     .text h1 {
       display: inline-block;
       line-height: 1.6;
       font-size: 40px;
       margin: 0;
-    }
+    } */
     @media (max-width:991px){
       .header-area .links {
         display: none;
@@ -368,7 +369,6 @@ position: relative;
     padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
     display: flex;
     background-color: var(--main-color);
   }
@@ -386,12 +386,11 @@ position: relative;
     font-weight: bold;
     font-size: 30px;
     color: var(--third-color);
-    margin: 0 0 10px;
+    margin: 0 0 20px 0;
   }
   .about-us .info-box p {
     line-height: 1.8;
     color: #777;
-    margin: 0;
   }
   .about-us .image-box {
     flex: 1;
@@ -854,8 +853,8 @@ position: relative;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, .6);
-    /* background-color: rgb(255 255 255 / 60%); */
+    background-color: var(--main-color);
+    opacity: 0.6;
   }
   .contact .container {
     position: relative;
