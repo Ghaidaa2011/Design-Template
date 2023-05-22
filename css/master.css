@@ -377,6 +377,8 @@ position: relative;
     .about-us {
       display: block;
       text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
   .about-us .info-box {
