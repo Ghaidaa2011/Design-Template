@@ -1,4 +1,4 @@
-// //Start scroll up 
+021// //Start scroll up 
 // let scrollUp = document.querySelector(".up");
 // window.onscroll = function () {
 //     this.scrollY >= 400 ? scrollUp.classList.add("show") : scrollUp.classList.remove("show");
@@ -76,12 +76,12 @@ randomBackEl.forEach(span => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Start changing the background image
 let landingPage = document.querySelector(".landing-page");
-let imgsArray = ["img1.webp","img2.webp","img3.jpg"];
+let imgsArray = ["image1.jpg","image2.jpg","img3.jpg"];
 length=0;
 function randomizeImgs(){
     if (backgroundOption === true) {
         backgroundInterval = setInterval( ()=> {
-            landingPage.style.backgroundImage = `url("../imgs/${imgsArray[length]}")`;
+            landingPage.style.backgroundImage = `url(imgs/${imgsArray[length]})`;
             length++;
             if (length >= imgsArray.length){
                 length = 0;
@@ -122,13 +122,13 @@ randomizeImgs();
         // let titlewindowScrolltop = this.pageYOffset;
         if (windowScrollTop > (titleOffsetTop + titleOuterHeight - windowHeight)) {
             document.querySelectorAll(".title .icons span i").forEach(i =>{
-                i.style.color = "black";
+                i.style.color = "#666";
             });
             document.querySelector(".title h2").style.height = "57.5px";
         } 
         else {
             document.querySelectorAll(".title .icons span i").forEach(i =>{
-                i.style.color = "white";
+                i.style.color = "var(--main-color)";
             });
             document.querySelector(".title h2").style.height = "0px";
         }
